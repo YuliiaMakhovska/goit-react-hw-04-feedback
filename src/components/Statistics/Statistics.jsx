@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import {StatisticsList, StatisticsItem} from './Statistics.styled'
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
-    <StatisticsList>
+    return (    <StatisticsList>
         <StatisticsItem>
             <span>Good : { good}</span>
         </StatisticsItem>
@@ -18,7 +18,8 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
                 <StatisticsItem>
             <span>PositivePercentage : { positivePercentage}%</span>
         </StatisticsItem>
-    </StatisticsList>
+    </StatisticsList>)
+
 }
 
 Statistics.propTypes = {
